@@ -10,6 +10,8 @@ import boarding from "./assests/dog-house.png"
 import vet from "./assests/veterinarian.png"
 import daycare from "./assests/world-animal-day.png"
 import training from "./assests/dog-training.png"
+import image1 from "./assests/image1.png"
+import image2 from "./assests/image2.webp"
 
 //import Grid2 from "@mui/material/Unstable_Grid2"; 
 
@@ -19,7 +21,8 @@ const Homepage = () => {
     <>
       <img src={mainimg} className="mainimg" />
 
-      <h1>Our Services</h1>
+      <Typography variant="h2" sx={{color:"#7A1CAC", fontSize:"60px",textAlign:"center" ,fontFamily:"Poppins",fontWeight:"Bold"}}>Our Services</Typography>
+      <h2 style={{color:"#000000", fontSize:"20px",textAlign:"center" ,fontFamily:"Poppins", paddingBottom:"20px"}}>Need Vet advice?   Going on vacation?  Need daily walk?  </h2>
 
       <Box sx={{ flexGrow: 1  }}>
         <Grid container rowSpacing={2} columnSpacing={-10}>
@@ -82,6 +85,20 @@ const Homepage = () => {
           
         </Grid>
       </Box>
+      <Box sx={{ flexGrow: 1  }}>
+        <Grid container rowSpacing={2} columnSpacing={-10}>
+
+       <Grid item xs={8}>
+           <img src={image2}/>
+        </Grid>
+        <Grid item xs={8}>
+           <img src={image2}/>
+        </Grid>
+        </Grid>
+    </Box>
+      
+
+
     </>
   );
 };

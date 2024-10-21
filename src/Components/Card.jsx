@@ -9,8 +9,14 @@ import Box from "@mui/material/Box";
 
 const CardComponent = ({ image, title, description }) => {
   return (
-     
-    <Card sx={{ maxWidth: 250, height: 340, backgroundColor: "#EBD3F8"}}>
+    <Card
+      sx={{
+        maxWidth: 250,
+        height: 340,
+        backgroundColor: "#EBD3F8",
+        boxShadow: 3,
+      }}
+    >
       <div className="cardimg">
         <CardMedia sx={{ height: 140 }} image={image} title={title} />
       </div>
@@ -24,8 +30,9 @@ const CardComponent = ({ image, title, description }) => {
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
-            color:"#7A1CAC",
-            fontWeight:"Bold"
+            color: "#7A1CAC",
+            fontWeight: "Bold",
+            fontFamily: "Poppins",
           }}
         >
           {title}
@@ -35,7 +42,6 @@ const CardComponent = ({ image, title, description }) => {
         </Typography>
       </CardContent>
     </Card>
-    
   );
 };
 
