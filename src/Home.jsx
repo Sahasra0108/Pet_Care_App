@@ -4,6 +4,13 @@ import Grid from "@mui/material/Grid";
 import CardComponent from "./Components/Card";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import walking from "./assests/animals.png"
+import bathing from "./assests/bathing.png"
+import boarding from "./assests/dog-house.png"
+import vet from "./assests/veterinarian.png"
+import daycare from "./assests/world-animal-day.png"
+import training from "./assests/dog-training.png"
+
 //import Grid2 from "@mui/material/Unstable_Grid2"; 
 
 
@@ -14,50 +21,65 @@ const Homepage = () => {
 
       <h1>Our Services</h1>
 
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
+      <Box sx={{ flexGrow: 1  }}>
+        <Grid container rowSpacing={2} columnSpacing={-10}>
           <Grid item xs={4}>
+          <Box sx={{ paddingLeft: "200px", display: 'flex' }}>
             <CardComponent
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image={walking}
               title="Dog Walking"
               description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica."
             />
+            </Box>
           </Grid>
           <Grid item xs={4}>
+          <Box sx={{ paddingLeft: "100px", display: 'flex',paddingRight: "100px" }}>
             <CardComponent
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image={daycare} 
               title="Pet Daycare"
               description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica."
             />
+        </Box>
           </Grid>
           <Grid item xs={4}>
+          <Box sx={{ paddingRight: "200px", display: 'flex' }}>
             <CardComponent
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image={training}
               title="Dog Training"
               description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica."
             />
+            </Box>
           </Grid>
           <Grid item xs={4}>
+          <Box sx={{ paddingLeft: "200px", display: 'flex' }}>
             <CardComponent
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image={vet}
               title="Vet Advice"
               description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica."
             />
+            </Box>
           </Grid>
+          
           <Grid item xs={4}>
+          <Box sx={{paddingLeft: "100px" , display: 'flex', paddingRight: "100px" }}> 
             <CardComponent
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image={bathing}
               title="Dog Bathing"
               description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica."
             />
+            </Box>
           </Grid>
+          
           <Grid item xs={4}>
+          <Box sx={{ paddingRight: "200px", display: 'flex' }}>
             <CardComponent
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image={boarding}
               title="Dog Boarding"
               description="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica."
             />
+            </Box>
           </Grid>
+          
         </Grid>
       </Box>
     </>
