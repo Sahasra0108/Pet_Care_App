@@ -47,3 +47,30 @@
   padding-left:50px;
 
 }
+
+.img1{
+  height:500px;
+  width:600px;
+  padding-top: 30px;
+}
+
+.img2{
+  height:400px;
+  width:500px;
+   
+  padding-left: 30px;
+}
+
+.p1{
+  padding-top: 180px;
+  font-size: 20px;
+  font-family:"Poppins";
+  padding-right: 150px;
+}
+
+.p2{
+  padding-top: 180px;
+  font-size: 20px;
+  font-family:"Poppins";
+  padding-left: 150px;
+}
